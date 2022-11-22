@@ -20,6 +20,7 @@ function onClick() {
   input.email.value = '';
   input.message.value = '';
   localStorage.clear();
+  
 }
 // ментору -> подскажите как правильно очистить форму?
 // если буде 100 полей , не прописывать же каждый в ручную
