@@ -1,5 +1,5 @@
 console.log('start 3th file');
-import { throttle } from 'lodash';
+import  throttle  from 'lodash';
 const input = document.querySelector('.feedback-form');
 const submit = input.querySelector('button');
 submit.addEventListener('click', onClick);
@@ -20,6 +20,7 @@ function onClick() {
   input.email.value = '';
   input.message.value = '';
   localStorage.clear();
+
   
 }
 // ментору -> подскажите как правильно очистить форму?
