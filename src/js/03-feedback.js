@@ -17,9 +17,10 @@ function inputFunc(e) {
   localStorage.setItem('data', JSON.stringify(localData));
 }
 function onClick() {
-  input.email.value = '';
-  input.message.value = '';
+//   input.email.value = '';
+//   input.message.value = '';
   localStorage.clear();
+  input.reset();
 
   
 }
