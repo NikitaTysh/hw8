@@ -1,4 +1,4 @@
-console.log('start 3th file');
+console.log('start 3.01');
 import throttle from 'lodash.throttle';
 const input = document.querySelector('.feedback-form');
 const submit = document.querySelector('.feedback-form button');
@@ -12,8 +12,8 @@ if (localStorage.getItem('data') !== null) {
 }
 input.addEventListener('input', throttle(inputFunc, 50));
 function inputFunc(e) {
-  localData.email = e.currentTarget.elements.email.value;
-  localData.message = e.currentTarget.elements.message.value;
+  localData.email = e.target.value;
+  localData.message = e.target.value;
   localStorage.setItem('data', JSON.stringify(localData));
 }
 function onClick(e) {
